@@ -10,3 +10,6 @@ devenv.local.yaml
 .pre-commit-config.yaml
 
 .env
+
+# Java
+*.class
