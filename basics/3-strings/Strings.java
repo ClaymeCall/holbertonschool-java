@@ -1,7 +1,7 @@
 public class Strings {
 
   public static void main(String[] args){
-    System.out.println(extractDomain(args[0]));
+    System.out.println(initials(args[0]));
   }
 
   public static String capitalize(String s){
@@ -29,6 +29,21 @@ public class Strings {
     }
 
     return count;
+  }
+
+  public static String initials(String s) {
+
+    String[] arrayOfWords= s.trim().split(" ");
+
+    String initials = "";
+
+    for (int i=0; i < arrayOfWords.length; i++) {
+      if (!arrayOfWords[i].equals("")) {
+        initials = initials + arrayOfWords[i].toUpperCase().charAt(0);
+      }
+    }
+
+    return initials;
   }
 
   public static boolean isPalindrome(String s) {
