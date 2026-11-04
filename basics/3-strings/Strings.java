@@ -1,7 +1,7 @@
 public class Strings {
 
   public static void main(String[] args){
-    System.out.println(isPalindrome(args[0]));
+    System.out.println(extractDomain(args[0]));
   }
 
   public static String capitalize(String s){
@@ -41,5 +41,13 @@ public class Strings {
     }
 
     return  processedString.equals(reversedString);
+  }
+
+  public static String extractDomain(String s) {
+    if (s == null || s.isEmpty() || !s.contains("@") || s.endsWith("@")) {
+      return "";
+    }
+
+    return s.split("@")[1];
   }
 }
