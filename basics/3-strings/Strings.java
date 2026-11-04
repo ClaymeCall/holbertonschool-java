@@ -6,6 +6,10 @@ public class Strings {
 
   public static String capitalize(String s){
 
+    if (s == null || s.isEmpty()) {
+      return "";
+    }
+
     String lowerCaseString = s.toLowerCase();
     String capitalizedString = lowerCaseString.substring(0, 1).toUpperCase() + lowerCaseString.substring(1);
 
