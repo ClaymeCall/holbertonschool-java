@@ -11,5 +11,9 @@ public class Variables {
     System.out.printf("boolean: %b %b%n", false, true);
 
     // Part 2: Demonstrations
+    System.out.printf("overflow: %d%n", Integer.MAX_VALUE + 1);
+    System.out.printf("precision: %s%n", 0.1 + 0.2);
+    System.out.printf("truncation: %d%n", (int) 3.99);
+    System.out.printf("promotion: %d%n", Integer.MAX_VALUE + (long) 1);
   }
 }
