@@ -1,7 +1,6 @@
 public class Strings {
 
   public static void main(String[] args){
-    System.out.println(initials(args[0]));
   }
 
   public static String capitalize(String s){
