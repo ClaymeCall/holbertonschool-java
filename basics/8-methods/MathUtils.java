@@ -52,7 +52,15 @@ public class MathUtils {
   }
 
   public static long power(int base, int exponent) {
-    return 0;
+    long powered = 1;
+
+    if (exponent < 0) return -1;
+
+    for(int i = 0; i < exponent; i++) {
+      powered *= base;
+    };
+
+    return powered;
   }
 
   public static int fibonacci(int n) {
