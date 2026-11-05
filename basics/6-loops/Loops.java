@@ -13,11 +13,18 @@ public class Loops {
     return sum;
   }
 
+  public static long factorial(int n) {
 
-    public static int collatzSteps(long n) {
-        return 0;
+    if (n < 0 || n > 20) {
+      return -1;
+    }
+    long result = 1;
+
+    for (int i = 2; i <= n; i ++) {
+      result  *= i;
     }
 
-    public static void main(String[] args) {
-    }
+    return result;
+  }
+
 }
