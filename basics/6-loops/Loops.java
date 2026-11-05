@@ -1,7 +1,13 @@
 public class Loops {
 
   public static void main(String[] args) {
-    System.out.println(countDigits(Integer.parseInt(args[0])));
+
+    for(int i = 1; i <= 9; i++) {
+      for (int j = 1; j <= 9; j++) {
+        System.out.printf("%3d", i*j);
+      }
+      System.out.println();
+    }
   }
 
   public static int sumTo(int n) {
