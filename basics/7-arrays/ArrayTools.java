@@ -64,4 +64,18 @@ public class ArrayTools {
     return identityMatrix;
   }
 
+  public static String format(int[][] m) {
+    StringBuilder sb = new StringBuilder();
+
+    for(int i = 0; i < m.length; i++) {
+      for(int j = 0; j < m.length; j++) {
+        sb.append(m[i][j]);
+        if(j < m.length - 1) sb.append(" ");
+      }
+        
+      if(i < m.length - 1) sb.append("\n");
+    }
+
+    return sb.toString();
+  }
 }
