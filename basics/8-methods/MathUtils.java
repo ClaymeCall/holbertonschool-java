@@ -27,7 +27,16 @@ public class MathUtils {
   }
 
   public static boolean isPrime(int n) {
-    return false;
+
+    if(n < 2) return false;
+
+    double nSqrt = Math.floor(Math.sqrt(n));
+
+    for(int i = 2; i <= nSqrt; i++) {
+      if (n % i == 0) return false;
+    }
+
+    return true;
   }
 
   public static int gcd(int a, int b) {
