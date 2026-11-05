@@ -1,29 +1,33 @@
 public class ArrayTools {
 
-    public static int max(int[] t) {
-        return 0;
-    }
+  public static void main(String[] args) {
+  }
 
-    public static int min(int[] t) {
-        return 0;
-    }
+  public static int max(int[] t) {
+    int max = t[0];
 
-    public static double average(int[] t) {
-        return 0.0;
+    for(int i = 1; i < t.length; i++) {
+      if (t[i] > max) max = t[i];
     }
+    return max;
+  }
 
-    public static void reverseInPlace(int[] t) {
-    }
+  public static int min(int[] t) {
+    int min = t[0];
 
-    public static int indexOf(int[] t, int value) {
-        return 0;
+    for(int i = 1; i < t.length; i++) {
+      if (t[i] < min) min = t[i];
     }
+    return min;
+  }
 
-    public static int[][] identity(int n) {
-        return null;
-    }
+  public static double average(int[] t) {
+    double sum = 0;
 
-    public static String format(int[][] m) {
-        return null;
+    for(int i = 0; i < t.length; i++) {
+      sum += t[i];
     }
+    return sum/t.length;
+  }
+
 }
