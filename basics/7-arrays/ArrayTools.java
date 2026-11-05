@@ -1,6 +1,11 @@
 public class ArrayTools {
 
   public static void main(String[] args) {
+
+    int[] tab = {1, 2, 3, 4};
+
+    System.out.println(tab);
+    System.out.println(java.util.Arrays.toString(tab));
   }
 
   public static int max(int[] t) {
