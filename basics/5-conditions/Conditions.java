@@ -1,20 +1,19 @@
 public class Conditions {
 
-    public static String fizzBuzz(int n) {
-        return null;
-    }
+  public static void main(String[] args) {
+  }
 
-    public static String dayType(int day) {
-        return null;
-    }
+  public static String fizzBuzz(int n) {
+    StringBuilder output = new StringBuilder();
 
-    public static boolean isLeapYear(int year) {
-        return false;
+    if (n % 5 == 0 || n % 3 == 0 ) {
+      if (n % 3 == 0 ) output.append("Fizz");
+      if (n % 5 == 0 ) output.append("Buzz");
     }
+    else return output.append(n).toString();
 
-    public static int daysInMonth(int month, int year) {
-        return 0;
-    }
+    return output.toString();
+  }
 
     public static String grade(int score) {
         return null;
