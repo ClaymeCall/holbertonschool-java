@@ -24,6 +24,8 @@ public class ArrayTools {
   public static double average(int[] t) {
     double sum = 0;
 
+    if(t.length == 0) return 0.0;
+
     for(int i = 0; i < t.length; i++) {
       sum += t[i];
     }
