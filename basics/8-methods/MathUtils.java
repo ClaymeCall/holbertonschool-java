@@ -15,7 +15,15 @@ public class MathUtils {
   }
 
   public static int max(int... values) {
-    return 0;
+    int max = Integer.MIN_VALUE;
+
+    if(values.length == 0) return max;
+
+    for(int i = 0; i < values.length; i++) {
+      if (values[i] > max) max = values[i];
+    }
+
+    return max;
   }
 
   public static boolean isPrime(int n) {
