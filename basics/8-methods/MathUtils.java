@@ -4,7 +4,8 @@ public class MathUtils {
   }
 
   public static int max(int a, int b) {
-    return 0;
+    if(a > b) return a;
+    else return b;
   }
 
   public static int max(int a, int b, int c) {
