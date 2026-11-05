@@ -68,9 +68,9 @@ public class ArrayTools {
     StringBuilder sb = new StringBuilder();
 
     for(int i = 0; i < m.length; i++) {
-      for(int j = 0; j < m.length; j++) {
+      for(int j = 0; j < m[i].length; j++) {
         sb.append(m[i][j]);
-        if(j < m.length - 1) sb.append(" ");
+        if(j < m[i].length - 1) sb.append(" ");
       }
         
       if(i < m.length - 1) sb.append("\n");
