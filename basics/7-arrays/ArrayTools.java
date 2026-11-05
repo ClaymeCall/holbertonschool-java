@@ -51,4 +51,17 @@ public class ArrayTools {
     return -1;
   }
 
+  public static int[][] identity(int n) {
+    int[][] identityMatrix = new int[n][n];
+
+    if(n == 0) return identityMatrix;
+
+    for(int i = 0; i < n; i++) {
+      for(int j = 0; j < n; j++) {
+        if( i == j) identityMatrix[i][j] = 1;
+      }
+    }
+    return identityMatrix;
+  }
+
 }
