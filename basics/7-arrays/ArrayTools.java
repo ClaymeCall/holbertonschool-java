@@ -43,4 +43,12 @@ public class ArrayTools {
     }
   }
 
+  public static int indexOf(int[] t, int value) {
+
+    for(int i = 0; i < t.length; i++) {
+      if (t[i] == value) return i;
+    }
+    return -1;
+  }
+
 }
