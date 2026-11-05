@@ -48,4 +48,15 @@ public class Conditions {
     };
   }
 
+  public static String grade(int score) {
+    if((0 <= score) && (score <= 100)) {
+      if(score >= 90) return "A";
+      else if(score >= 80) return "B";
+      else if(score >= 70) return "C";
+      else if(score >= 60) return "D";
+      else return "F";
+    }
+
+    return "invalid";
+  }
 }
