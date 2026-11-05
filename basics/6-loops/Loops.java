@@ -27,4 +27,20 @@ public class Loops {
     return result;
   }
 
+  public static String triangle(int height) {
+    if (height < 1) return "";
+
+    StringBuilder triangle = new StringBuilder();
+
+    for (int i = 1; i <= height; i++) {
+
+      for (int j = 0; j < i; j++) {
+        triangle.append("*");
+      }
+
+      if (i != height) triangle.append("\n");
+    }
+
+    return triangle.toString();
+  }
 }
