@@ -19,25 +19,10 @@ public class Conditions {
     String answer = "";
 
     switch(day) {
-      case 1:
+      case 1, 2, 3, 4, 5:
         answer = "weekday";
         break;
-      case 2:
-        answer = "weekday";
-        break;
-      case 3:
-        answer = "weekday";
-        break;
-      case 4:
-        answer = "weekday";
-        break;
-      case 5:
-        answer = "weekday";
-        break;
-      case 6:
-        answer = "weekend";
-        break;
-      case 7 :
+      case 6, 7:
         answer = "weekend";
         break;
       default:
