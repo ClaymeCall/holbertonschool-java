@@ -15,10 +15,36 @@ public class Conditions {
     return output.toString();
   }
 
-    public static String grade(int score) {
-        return null;
+  public static String dayType(int day) {
+    String answer = "";
+
+    switch(day) {
+      case 1:
+        answer = "weekday";
+        break;
+      case 2:
+        answer = "weekday";
+        break;
+      case 3:
+        answer = "weekday";
+        break;
+      case 4:
+        answer = "weekday";
+        break;
+      case 5:
+        answer = "weekday";
+        break;
+      case 6:
+        answer = "weekend";
+        break;
+      case 7 :
+        answer = "weekend";
+        break;
+      default:
+        answer = "invalid";
     }
 
-    public static void main(String[] args) {
-    }
+    return answer;
+  }
+
 }
