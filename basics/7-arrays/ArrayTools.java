@@ -32,4 +32,15 @@ public class ArrayTools {
     return sum/t.length;
   }
 
+  public static void reverseInPlace(int[] t) {
+    int buffer = 0;
+    int arrLength = t.length;
+
+    for(int i = 0; i < arrLength/2; i++) {
+      buffer = t[i];
+      t[i] = t[arrLength - i - 1];
+      t[arrLength - i - 1] = buffer;
+    }
+  }
+
 }
