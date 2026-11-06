@@ -1,24 +1,28 @@
 public class Counter {
 
-    private int value;
+  private int value;
 
-    public Counter() {
-    }
+  public Counter() {
+    this.value = 0;
+  }
 
-    public Counter(int value) {
-    }
+  public Counter(int value) {
+    this.value = value;
+  }
 
-    public void increment() {
-    }
+  public void increment() {
+    this.value++;
+  }
 
-    public int getValue() {
-        return 0;
-    }
+  public int getValue() {
+    return this.value;
+  }
 
-    void reset() {
-    }
+  void reset() {
+    this.value = 0;
+  }
 
-    protected String describe() {
-        return null;
-    }
+  protected String describe() {
+    return "Counter[value=" + this.value + "]";
+  }
 }
